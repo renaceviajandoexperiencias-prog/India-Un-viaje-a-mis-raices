@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viaje a India 06-18 Abril - Transformación Consciente</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+        
+        /* Header Sticky */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: white;
+            padding: 15px 40px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            color: #FF6B35;
+            font-weight: 700;
+        }
+        
+        .header-cta {
+            background: linear-gradient(135deg, #FF6B35 0%, #FF8C42 100%);
+            color: white;
+            padding: 12px 32px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+        
+        .header-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(255, 107, 53, 0.4);
+        }
+        
+        body {
+            padding-top: 70px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 120px 40px 100px;
+            background: linear-gradient(135deg, #FF6B35 0%, #FF8C42 100%);
+            color: white;
+            margin-top: -70px;
+            padding-top: 170px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-emoji {
+            font-size: 90px;
+            margin-bottom: 25px;
+            animation: float 3s ease-in-out infinite;
+            display: inline-block;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 64px;
+            margin-bottom: 20px;
+            line-height: 1.1;
+            font-weight: 700;
+        }
+        
+        .hero .tagline {
+            font-size: 26px;
+            margin-bottom: 30px;
+            opacity: 0.95;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        
+        .hero-subtext {
+            font-size: 20px;
+            max-width: 650px;
+            margin: 0 auto 35px;
+            opacity: 0.92;
+            line-height: 1.7;
+        }
+        
+        .hero-dates {
+            background: rgba(255,255,255,0.25);
+            padding: 20px 50px;
+            border-radius: 15px;
+            display: inline-block;
+            font-size: 20px;
+            font-weight: 700;
+            backdrop-filter: blur(10px);
+            margin-bottom: 35px;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+        
+        .cta-main {
+            display: inline-block;
+            background: white;
+            color: #FF6B35;
+            padding: 20px 60px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 19px;
+            transition: all 0.3s ease;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.25);
+            cursor: pointer;
+            border: none;
+        }
+        
+        .cta-main:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 60px rgba(0,0,0,0.35);
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+        
+        /* Why India */
+        .why-section {
+            padding: 100px 40px;
+            text-align: center;
+            background: white;
+        }
+        
+        .why-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            color: #FF6B35;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+        
+        .why-text {
+            font-size: 20px;
+            line-height: 1.9;
+            max-width: 750px;
+            margin: 0 auto 30px;
+            color: #555;
+        }
+        
+        .why-text strong {
+            color: #FF6B35;
+            font-weight: 700;
+        }
+        
+        .who-quote {
+            background: linear-gradient(135deg, #FFF5EE 0%, #FFE4CC 100%);
+            padding: 50px 45px;
+            border-radius: 15px;
+            margin-top: 50px;
+            border-left: 6px solid #FF6B35;
+        }
+        
+        .who-quote p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        
+        .who-quote strong {
+            color: #FF6B35;
+        }
+        
+        /* Two Types */
+        .types-section {
+            padding: 100px 40px;
+            background: #FFF5EE;
+        }
+        
+        .types-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .type-card {
+            background: white;
+            padding: 50px 40px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            border-top: 6px solid #FF6B35;
+        }
+        
+        .type-card .icon {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+        
+        .type-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            color: #FF6B35;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .type-card p {
+            font-size: 17px;
+            line-height: 1.8;
+            color: #666;
+        }
+        
+        /* Itinerary */
+        .itinerary-section {
+            padding: 100px 40px;
+            background: white;
+        }
+        
+        .itinerary-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            color: #FF6B35;
+            text-align: center;
+            margin-bottom: 60px;
+            font-weight: 700;
+        }
+        
+        .itinerary-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .phase-card {
+            background: linear-gradient(135deg, #FFF5EE 0%, #FFE4CC 100%);
+            padding: 50px 40px;
+            border-radius: 15px;
+            border-left: 6px solid #FF6B35;
+        }
+        
+        .phase-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            color: #FF6B35;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .phase-card .subtitle {
+            font-size: 16px;
+            color: #FF6B35;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .phase-card p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        
+        .phase-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .phase-card li {
+            padding-left: 25px;
+            margin-bottom: 10px;
+            position: relative;
+            font-size: 15px;
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .phase-card li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #FF6B35;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        /* Discoveries */
+        .discoveries-section {
+            padding: 100px 40px;
+            background: #FFF5EE;
+        }
+        
+        .discoveries-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            color: #FF6B35;
+            text-align: center;
+            margin-bottom: 60px;
+            font-weight: 700;
+        }
+        
+        .discoveries-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .discovery-card {
+            background: white;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+        }
+        
+        .discovery-card .number {
+            display: inline-block;
+            background: linear-gradient(135deg, #FF6B35 0%, #FF8C42 100%);
+            color: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 45px;
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .discovery-card h3 {
+            font-size: 20px;
+            color: #FF6B35;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+        
+        .discovery-card p {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #666;
+        }
+        
+        /* Quote */
+        .quote-section {
+            padding: 80px 40px;
+            text-align: center;
+            background: linear-gradient(135deg, rgba(255, 107, 53, 0.08) 0%, rgba(255, 140, 66, 0.08) 100%);
+        }
+        
+        .quote {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            font-style: italic;
+            color: #FF6B35;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+            font-weight: 700;
+        }
+        
+        /* Why Irresistible */
+        .irresistible-section {
+            padding: 100px 40px;
+            background: white;
+        }
+        
+        .irresistible-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            color: #FF6B35;
+            text-align: center;
+            margin-bottom: 60px;
+            font-weight: 700;
+        }
+        
+        .irresistible-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .irresistible-item {
+            background: linear-gradient(135deg, #FFF5EE 0%, #FFE4CC 100%);
+            padding: 35px;
+            border-radius: 12px;
+            text-align: center;
+        }
+        
+        .irresistible-item .icon {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+        
+        .irresistible-item h3 {
+            font-size: 18px;
+            color: #FF6B35;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .irresistible-item p {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #666;
+        }
+        
+        /* Price Section */
+        .price-section {
+            background: linear-gradient(135deg, #FF6B35 0%, #FF8C42 100%);
+            color: white;
+            padding: 120px 40px;
+            text-align: center;
+        }
+        
+        .price-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+        
+        .price-tag {
+            font-size: 80px;
+            font-weight: bold;
+            margin: 30px 0;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+        }
+        
+        .price-info {
+            font-size: 20px;
+            margin-bottom: 40px;
+            opacity: 0.95;
+            font-weight: 600;
+        }
+        
+        .price-details {
+            background: rgba(255,255,255,0.15);
+            padding: 40px 35px;
+            border-radius: 15px;
+            margin: 40px auto;
+            max-width: 700px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.2);
+        }
+        
+        .price-details p {
+            font-size: 18px;
+            margin: 15px 0;
+            line-height: 1.7;
+            font-weight: 500;
+        }
+        
+        .payment-box {
+            background: rgba(255,255,255,0.15);
+            padding: 30px;
+            border-radius: 12px;
+            margin: 35px 0;
+            font-size: 17px;
+            line-height: 1.8;
+            border: 2px solid rgba(255,255,255,0.2);
+        }
+        
+        .urgency {
+            background: rgba(255,255,255,0.25);
+            padding: 30px;
+            border-radius: 12px;
+            margin: 35px 0;
+            display: inline-block;
+            font-size: 20px;
+            font-weight: 700;
+            border: 2px solid rgba(255,255,255,0.4);
+            line-height: 1.8;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 20px 50px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            cursor: pointer;
+        }
+        
+        .cta-button.primary {
+            background: white;
+            color: #FF6B35;
+            box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+        }
+        
+        .cta-button.primary:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 18px 50px rgba(0,0,0,0.35);
+        }
+        
+        .cta-button.secondary {
+            background: transparent;
+            color: white;
+            border: 3px solid white;
+        }
+        
+        .cta-button.secondary:hover {
+            background: white;
+            color: #FF6B35;
+        }
+        
+        /* Bonuses */
+        .bonuses-section {
+            padding: 100px 40px;
+            background: #FFF5EE;
+        }
+        
+        .bonuses-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            color: #FF6B35;
+            text-align: center;
+            margin-bottom: 60px;
+            font-weight: 700;
+        }
+        
+        .bonus-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 35px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .bonus-card {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+            border-top: 5px solid #FF6B35;
+        }
+        
+        .bonus-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            color: #FF6B35;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .bonus-card p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 12px;
+        }
+        
+        .bonus-card .bonus-highlight {
+            background: #FFF5EE;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 15px;
+            font-size: 15px;
+            color: #FF6B35;
+            font-weight: 700;
+        }
+        
+        /* FAQ */
+        .faq-section {
+            padding: 100px 40px;
+            background: white;
+        }
+        
+        .faq-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            color: #FF6B35;
+            text-align: center;
+            margin-bottom: 60px;
+            font-weight: 700;
+        }
+        
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            border-left: 5px solid #FF6B35;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+        
+        .faq-item h3 {
+            color: #FF6B35;
+            font-size: 18px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-weight: 700;
+        }
+        
+        .faq-item p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #666;
+        }
+        
+        /* Final CTA */
+        .final-cta {
+            background: linear-gradient(135deg, #FF6B35 0%, #FF8C42 100%);
+            color: white;
+            padding: 120px 40px;
+            text-align: center;
+        }
+        
+        .final-cta h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+        
+        .final-cta p {
+            font-size: 20px;
+            margin-bottom: 20px;
+            line-height: 1.8;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .contact-info {
+            background: rgba(255,255,255,0.15);
+            padding: 40px;
+            border-radius: 15px;
+            margin: 45px auto;
+            max-width: 700px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.2);
+        }
+        
+        .contact-info p {
+            font-size: 22px;
+            margin: 15px 0;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-info a:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+        
+        .final-question {
+            background: rgba(255,255,255,0.15);
+            padding: 35px;
+            border-radius: 12px;
+            margin: 40px auto;
+            max-width: 700px;
+            font-size: 19px;
+            line-height: 1.8;
+            font-weight: 600;
+            border: 2px dashed rgba(255,255,255,0.4);
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 45px 40px;
+            background: #333;
+            color: white;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+        
+        .footer p {
+            margin: 8px 0;
+        }
+        
+        .footer strong {
+            color: #FF6B35;
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                padding: 12px 20px;
+            }
+            
+            .hero {
+                padding: 100px 20px 60px;
+                padding-top: 150px;
+            }
+            
+            .hero h1 {
+                font-size: 40px;
+            }
+            
+            .hero .tagline {
+                font-size: 20px;
+            }
+            
+            .hero-emoji {
+                font-size: 70px;
+            }
+            
+            .types-grid,
+            .itinerary-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .quote {
+                font-size: 26px;
+            }
+            
+            .price-tag {
+                font-size: 60px;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+            }
+            
+            .cta-button {
+                width: 100%;
+            }
+            
+            .why-section h2,
+            .itinerary-section h2,
+            .discoveries-section h2,
+            .irresistible-section h2,
+            .price-section h2,
+            .bonuses-section h2,
+            .faq-section h2,
+            .final-cta h2 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">🕉️ Renace Viajando</div>
+        <a href="#contact" class="header-cta">Quiero Mi Lugar</a>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-emoji">🕉️</div>
+            <h1>India<br>Un Viaje a Mis Raíces</h1>
+            <p class="tagline">Descubre la espiritualidad, reconecta contigo y regresa transformada</p>
+            <p class="hero-subtext">Una experiencia íntima y consciente que recordarás como una de las más importantes de tu vida</p>
+            <div class="hero-dates">📅 06 – 18 de Abril</div>
+            <a href="#contact" class="cta-main">Quiero Mi Lugar</a>
+        </div>
+    </section>
+
+    <!-- Why India -->
+    <section class="why-section">
+        <h2>¿Por qué te está llamando India?</h2>
+        
+        <p class="why-text"><strong>NO TIENES QUE SABER POR QUÉ… SOLO SENTIR QUE ES AHORA.</strong></p>
+        
+        <div class="types-section" style="padding: 0; background: transparent; margin-top: 50px;">
+            <div class="types-grid">
+                <div class="type-card">
+                    <div class="icon">✨</div>
+                    <h3>Para quienes sienten el llamado</h3>
+                    <p>Ya sientes un llamado claro, aunque no sepas explicarlo. Algo dentro te pide parar.</p>
+                </div>
+                <div class="type-card">
+                    <div class="icon">❓</div>
+                    <h3>Para quienes buscan respuestas</h3>
+                    <p>No sabes qué te pasa, pero sientes que algo dentro pide parar. El viaje hace ese trabajo contigo.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="who-quote">
+            <p><strong>No necesitas experiencia previa en yoga. No necesitas "estar en un proceso". No necesitas respuestas antes de venir.</strong></p>
+            <p style="font-style: italic; color: #FF6B35; font-size: 19px; margin-top: 20px;">El viaje hace ese trabajo contigo.</p>
+        </div>
+    </section>
+
+    <!-- History -->
+    <section class="why-section" style="background: #FFF5EE;">
+        <h2>Historia Real</h2>
+        <p class="why-text">
+            He visto muchas personas llegar a viajes así diciendo: <br>
+            <strong style="font-size: 22px;">"No sé muy bien por qué estoy aquí."</strong>
+        </p>
+        <p class="why-text">
+            Y marcharse diciendo: <br>
+            <strong style="font-size: 22px;">"Ahora entiendo por qué tenía que venir."</strong>
+        </p>
+        <p class="why-text">
+            <strong>La transformación no ocurre porque alguien la busque.<br>
+            Ocurre porque el contexto es el correcto.</strong>
+        </p>
+        <p class="why-text">
+            Este viaje está diseñado para crear ese contexto.
+        </p>
+    </section>
+
+    <!-- Itinerary -->
+    <section class="itinerary-section">
+        <h2>Tu experiencia de 12 días</h2>
+        
+        <div class="itinerary-grid">
+            <div class="phase-card">
+                <h3>📍 PARTE 1</h3>
+                <div class="subtitle">La India que te descoloca (7 días)</div>
+                <p><strong>Delhi • Varanasi • Agra • Jaipur</strong></p>
+                
+                <p>Recorres los lugares más significativos de la India: templos sagrados, palacios imponentes, rituales que te conectan con algo más profundo.</p>
+                
+                <ul>
+                    <li>Ceremonia Ganga Aarti en Varanasi al atardecer</li>
+                    <li>Amanecer sobre el Ganges con meditación</li>
+                    <li>Taj Mahal: símbolo del amor eterno</li>
+                    <li>Fuerte Amber en Jaipur</li>
+                    <li>Guía local en cada monumento</li>
+                    <li>Transporte privado y alojamiento</li>
+                </ul>
+            </div>
+
+            <div class="phase-card">
+                <h3>🧘 PARTE 2</h3>
+                <div class="subtitle">Rishikesh (5 días)</div>
+                <p><strong>A los pies del Himalaya, junto al Ganges</strong></p>
+                
+                <p>Todo se ralentiza. Aquí no vienes a entender. Vienes a vivirlo. Yoga, meditación, pujas y rituales sagrados.</p>
+                
+                <ul>
+                    <li>Yoga diario (consciente, accesible)</li>
+                    <li>Meditación guiada al amanecer</li>
+                    <li>Pujas y rituales tradicionales</li>
+                    <li>Pensión completa incluida</li>
+                    <li>Grupo íntimo (máximo 8 personas)</li>
+                    <li>Ritual consciente de cierre</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discoveries -->
+    <section class="discoveries-section">
+        <h2>Lo que descubrirás</h2>
+        
+        <div class="discoveries-grid">
+            <div class="discovery-card">
+                <div class="number">1</div>
+                <h3>El caos es tu mejor maestro</h3>
+                <p>Aprenderás que no todo necesita estar bajo control para estar bien. Esa habilidad la llevarás de vuelta a tu vida.</p>
+            </div>
+
+            <div class="discovery-card">
+                <div class="number">2</div>
+                <h3>El silencio te habla más fuerte</h3>
+                <p>Escucharás tu voz interior quizás por primera vez en años. Descubrirás qué es lo que realmente quieres.</p>
+            </div>
+
+            <div class="discovery-card">
+                <div class="number">3</div>
+                <h3>Replanteamiento profundo</h3>
+                <p>Ver la vida y la muerte conviviendo naturalmente te hace cuestionar tus prioridades. Muchas cosas dejarán de importarte.</p>
+            </div>
+
+            <div class="discovery-card">
+                <div class="number">4</div>
+                <h3>Presencia y gratitud</h3>
+                <p>Los locales te enseñan cómo estar realmente presente. La felicidad está en lo que tienes, no en lo que falta.</p>
+            </div>
+
+            <div class="discovery-card">
+                <div class="number">5</div>
+                <h3>Conexión cuerpo-mente</h3>
+                <p>Descubrirás tu cuerpo como algo sagrado, no como algo que "arreglar". Esa conexión permanecerá para siempre.</p>
+            </div>
+
+            <div class="discovery-card">
+                <div class="number">6</div>
+                <h3>Libertad para ser tú</h3>
+                <p>Volverás diferente, más tranquila, con otras prioridades. No necesitas encajar en lo que otros esperan.</p>
+            </div>
+
+            <div class="discovery-card">
+                <div class="number">7</div>
+                <h3>Conexión para la vida</h3>
+                <p>Viajar con un grupo pequeño de mujeres en la misma búsqueda crea amistades profundas que duran para siempre.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote -->
+    <section class="quote-section">
+        <p class="quote">"India no te da lo que quieres.<br>Te da lo que necesitas."</p>
+    </section>
+
+    <!-- Why Irresistible -->
+    <section class="irresistible-section">
+        <h2>¿Por qué esta oferta es irresistible?</h2>
+        
+        <div class="irresistible-grid">
+            <div class="irresistible-item">
+                <div class="icon">🎯</div>
+                <h3>Resultado soñado</h3>
+                <p>Claridad, conexión, transformación real</p>
+            </div>
+
+            <div class="irresistible-item">
+                <div class="icon">✅</div>
+                <h3>Alta probabilidad de éxito</h3>
+                <p>Grupo + guía + entorno real</p>
+            </div>
+
+            <div class="irresistible-item">
+                <div class="icon">⏰</div>
+                <h3>Tiempo definido</h3>
+                <p>12 días para una experiencia completa</p>
+            </div>
+
+            <div class="irresistible-item">
+                <div class="icon">😌</div>
+                <h3>Esfuerzo mental bajo</h3>
+                <p>Todo está organizado y cuidado</p>
+            </div>
+
+            <div class="irresistible-item">
+                <div class="icon">🛡️</div>
+                <h3>Riesgo percibido mínimo</h3>
+                <p>Acompañamiento cercano y seguro</p>
+            </div>
+
+            <div class="irresistible-item">
+                <div class="icon">💎</div>
+                <h3>Oportunidad única</h3>
+                <p>Contexto irrepetible, energía única</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who -->
+    <section class="why-section" style="background: #FFF5EE;">
+        <h2>¿Quién te acompaña en este viaje?</h2>
+        
+        <div class="who-quote" style="background: white; border: 2px solid #FF6B35;">
+            <p>Mi nombre es <strong>Rosa</strong> y acompaño este viaje desde un lugar muy sencillo: el deseo de servir.</p>
+            
+            <p style="margin-top: 20px;">No organizo viajes para "ver lugares". Diseño experiencias para parar, respirar y volver a lo esencial, porque ese también ha sido parte de mi propio camino.</p>
+            
+            <p style="margin-top: 15px;"><strong>No soy una gurú.</strong> No vengo a decirte qué tienes que sentir ni qué tienes que cambiar.</p>
+            
+            <p style="margin-top: 15px;">Estoy aquí para <strong>sostener el espacio, cuidar el ritmo y acompañarte</strong> para que puedas vivir esta experiencia con profundidad, seguridad y presencia.</p>
+        </div>
+    </section>
+
+    <!-- Price Section -->
+    <section class="price-section">
+        <h2>Tu inversión en ti misma</h2>
+        
+        <div class="price-tag">1.395€</div>
+        <p class="price-info">Por persona • Habitación compartida</p>
+        
+        <div class="price-details">
+            <p><strong>✓</strong> 12 días completos (7 explorando + 5 en Rishikesh)</p>
+            <p><strong>✓</strong> Alojamiento en hoteles seleccionados + desayunos</p>
+            <p><strong>✓</strong> Todos los traslados y transportes privados</p>
+            <p><strong>✓</strong> Vuelo Delhi-Varanasi incluido</p>
+            <p><strong>✓</strong> Tours guiados en monumentos</p>
+            <p><strong>✓</strong> Yoga, meditación y pujas diarias</p>
+            <p><strong>✓</strong> Pensión completa en Rishikesh</p>
+            <p><strong>✓</strong> Acompañamiento integral + 3 bonus</p>
+        </div>
+
+        <p style="font-size: 20px; font-weight: 600; margin: 30px 0;">No estás pagando un viaje.<br><strong>Estás invirtiendo en una experiencia vital que deja huella.</strong></p>
+
+        <div class="payment-box">
+            <strong>Forma de Pago Flexible:</strong><br>
+            📌 Reserva: 200€ (se descuenta del total)<br>
+            📌 Resto: 15 días antes del viaje
+        </div>
+
+        <div class="urgency">
+            ⏰ OPORTUNIDAD ÚNICA<br>
+            Grupo íntimo • Plazas muy limitadas<br>
+            Contexto irrepetible • Energía única
+        </div>
+
+        <p style="font-size: 18px; margin: 35px 0; line-height: 1.8;">
+            <strong>Fechas cerradas: 06–18 de abril<br>
+            Este viaje no se repite igual</strong>
+        </p>
+
+        <div class="cta-buttons">
+            <a href="#contact" class="cta-button primary">Quiero Mi Lugar</a>
+            <a href="#faq" class="cta-button secondary">Tengo Preguntas</a>
+        </div>
+    </section>
+
+    <!-- Bonuses -->
+    <section class="bonuses-section">
+        <h2>✨ Bonuses que recibirás</h2>
+        
+        <div class="bonus-grid">
+            <div class="bonus-card">
+                <h3>🎁 BONUS 1</h3>
+                <h3 style="font-size: 19px; color: #333; font-weight: 600; margin-top: 10px;">Sesión de preparación online</h3>
+                <p>Encuentro previo para aterrizar expectativas, entender el sentido del viaje y llegar a India más presente y abierta.</p>
+                <div class="bonus-highlight">👉 Empiezas el viaje antes de subir al avión</div>
+            </div>
+
+            <div class="bonus-card">
+                <h3>🎁 BONUS 2</h3>
+                <h3 style="font-size: 19px; color: #333; font-weight: 600; margin-top: 10px;">Ritual consciente de cierre</h3>
+                <p>Ceremonia guiada en Rishikesh para integrar lo vivido, dar sentido a la experiencia y cerrar por dentro.</p>
+                <div class="bonus-highlight">👉 Lo que se cierra bien, permanece</div>
+            </div>
+
+            <div class="bonus-card">
+                <h3>🎁 BONUS 3</h3>
+                <h3 style="font-size: 19px; color: #333; font-weight: 600; margin-top: 10px;">Encuentro post-viaje online</h3>
+                <p>Sesión tras el regreso para acompañar tu aterrizaje, compartir experiencias y evitar que lo vivido se diluya.</p>
+                <div class="bonus-highlight">👉 El viaje no termina al volver a casa</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section" id="faq">
+        <h2>Preguntas Frecuentes</h2>
+        
+        <div class="faq-container">
+            <div class="faq-item">
+                <h3>¿Necesito experiencia previa en yoga o meditación?</h3>
+                <p>No. Las prácticas están adaptadas y enfocadas a la vivencia, no al rendimiento. Vienes como eres.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>¿Es un retiro espiritual obligatorio?</h3>
+                <p>No. Es una experiencia de viaje consciente donde la espiritualidad de India se vive de forma natural, sin imposiciones.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>¿Qué incluye exactamente Rishikesh?</h3>
+                <p>5 días completos • Yoga, meditación y pujas • Pensión completa • Excursiones espirituales y naturaleza • Ceremonia Ganga Aarti • Cuevas sagradas, templos, senderismo y amaneceres.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>¿Qué NO está incluido?</h3>
+                <p>Vuelos internacionales • Seguro de viaje • Gastos personales (bebidas, lavandería, compras) • Entradas a monumentos específicas • Propinas a conductor y guías.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>¿Este viaje es para mí si no sé "qué me pasa"?</h3>
+                <p>Sí. De hecho, muchas personas vienen exactamente desde ahí. No necesitas entenderlo todo antes. El viaje se encarga del resto.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>¿Viajaré sola con desconocidas?</h3>
+                <p>El grupo es reducido (máximo 8 mujeres) y todas vienen con una intención similar. La cuota es pequeña pero suficiente para crear un espacio seguro y vulnerable.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>¿Puedo tener habitación individual?</h3>
+                <p>El precio que ves es con habitación compartida. Si quieres individual, hay suplemento. Contáctame para detalles de precios especiales.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>¿Cuál es la política de cancelación?</h3>
+                <p>La reserva de 200€ se descuenta del total. Si cancelas con más de 60 días de anticipación, devolvemos lo pagado menos gastos administrativos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta" id="contact">
+        <h2>¿Lista para tu transformación?</h2>
+        
+        <p>Si algo dentro de ti resonó mientras leías esto, no es casualidad.</p>
+        <p><strong>India te está llamando. ¿Vas a responder?</strong></p>
+
+        <div class="contact-info">
+            <p>📧 <strong>renaceviajanadoexperiencias@gmail.com</strong></p>
+            <p>📱 <strong>WhatsApp: +34 623 211 438</strong></p>
+        </div>
+
+        <p style="font-size: 18px;">Escríbeme sin compromiso.<br><strong>Te cuento todo lo que necesitas saber.</strong></p>
+
+        <div class="final-question">
+            👉 Si asegurar tu plaza hoy te da tranquilidad<br>y el resto se paga más adelante…<br>
+            <strong>¿Qué te impide permitirte esta experiencia ahora?</strong>
+        </div>
+
+        <div class="cta-buttons">
+            <a href="mailto:renaceviajanadoexperiencias@gmail.com?subject=Quiero%20reservar%20el%20viaje%20a%20India%206-18%20Abril&body=Hola%20Rosa%2C%0A%0AMe%20interesa%20reservar%20mi%20plaza%20para%20el%20viaje%20a%20India%20del%206-18%20de%20Abril.%0A%0A%C2%BFPuedes%20darme%20m%C3%A1s%20informaci%C3%B3n%3F%0A%0AGracias" 
+               class="cta-button primary">
+                ✉️ Enviar Email
+            </a>
+            <a href="https://wa.me/34623211438?text=Hola%20Rosa!%20Me%20interesa%20el%20viaje%20a%20India%20del%206-18%20de%20Abril.%20Quiero%20saber%20m%C3%A1s%20y%20reservar%20mi%20plaza." 
+               class="cta-button primary">
+                💬 WhatsApp
+            </a>
+        </div>
+
+        <p style="margin-top: 60px; font-size: 18px; line-height: 1.9;">
+            <strong>Con cariño y gratitud,</strong><br>
+            <strong>Rosa</strong><br>
+            <em>Renace Viajando</em><br><br>
+            <em>"Porque mereces encontrarte a ti misma"</em>
+        </p>
+    </section>
+
+    <footer class="footer">
+        <p>© 2024 <strong>Renace Viajando</strong> • Viajes conscientes para mujeres que buscan transformación</p>
+        <p>Diseñado con amor para quienes se atreven a soñar</p>
+        <p style="margin-top: 15px; font-size: 14px;">Fechas: 06–18 de Abril | Grupo íntimo (máximo 8 personas) | Plazas muy limitadas</p>
+    </footer>
+</body>
+</html>
